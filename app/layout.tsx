@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import Image from 'next/image'
 import './globals.css'
+import Link from 'next/link'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -16,7 +18,28 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <header className='bg-gray-300 flex flex-wrap h-16 max-w-screen items-center justify-between mx-auto p-2 px-4'>
+          <Image className='flex items-center space-x-3 rtl:space-x-reverse'
+            src='/logo.png' width={100} height={100} alt='logo'>
+          </Image>
+          <nav className=''>
+            <ul className='flex gap-6'>
+              <li><Link href={'/'}>Quienes somos</Link></li>
+              <li><Link href={'/integrantes'}>Integrantes</Link></li>
+              <li><Link href={'/proyectos'}>Proyectos</Link></li>
+              <li><Link href={'/discord'}>Discord</Link></li>
+            </ul>
+          </nav>
+        <Link className='bg-orange-400 rounded-full px-4'
+          href={'/intranet'}>Login
+        </Link>
+        </header>
+        {children}
+        <footer className='bg-black flex flex-wrap h-12 max-w-screen items-center justify-center mx-auto '>
+          <p className='text-white flex items-center'>2024 CEIDS Ulima. All rigths reserved</p>
+        </footer>
+      </body>
     </html>
   )
 }
