@@ -30,6 +30,7 @@ export default function RootLayout({
               <li><Link href={'/integrantes'}>Integrantes</Link></li>
               <li><Link href={'/proyectos'}>Proyectos</Link></li>
               <li><Link href={'/discord'}>Discord</Link></li>
+              <li><Link href={'/test'}>Test</Link></li>
             </ul>
           </nav>
           <Link className='bg-orange-400 rounded-full'
