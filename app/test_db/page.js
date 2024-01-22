@@ -1,5 +1,5 @@
 "use client"
-import handleSubmit from '../handle_submit';
+import handleSubmit from '../components/handle_submit';
 import { useRef } from 'react';
  
 function App() {

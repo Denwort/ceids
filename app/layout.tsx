@@ -26,11 +26,12 @@ export default function RootLayout({
           <nav className=''>
             <ul className='flex flex-wrap gap-x-6 '>
               <li><Link href={'/'}>Inicio</Link></li>
-              <li><Link href={'/quienessomos'}>Quienes somos</Link></li>
-              <li><Link href={'/integrantes'}>Integrantes</Link></li>
-              <li><Link href={'/proyectos'}>Proyectos</Link></li>
-              <li><Link href={'/discord'}>Discord</Link></li>
-              <li><Link href={'/test'}>Test</Link></li>
+              <li><Link href={'/'}>Quienes somos</Link></li>
+              <li><Link href={'/'}>Integrantes</Link></li>
+              <li><Link href={'/'}>Proyectos</Link></li>
+              <li><Link href={'/'}>Discord</Link></li>
+              <li><Link href={'/test_db'}>Test</Link></li>
+              <li><Link href={'/profile'}>Profile</Link></li>
             </ul>
           </nav>
           <Link className='bg-orange-400 rounded-full'

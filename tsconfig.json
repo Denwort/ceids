@@ -22,6 +22,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/handle_submit.js", "app/test/page.js", "app/firebase.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/components/handle_submit.js", "app/test_db/page.js", "app/components/firebase.js", "app/register/page.ts", "app/register/page.ts", "app/index/page.js", "app/profile/page.JS"],
   "exclude": ["node_modules"]
 }
